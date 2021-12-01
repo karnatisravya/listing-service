@@ -1,0 +1,21 @@
+{
+  "name": "listing-service",
+  "version": "1.0.0",
+  "description": "Deploy One UI Kitchen Listings CRUD API using API Gateway and AWS Lambda",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sravya Karnati",
+  "license": "",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.43.0",
+    "@aws-sdk/util-dynamodb": "^3.43.0",
+    "bluebird": "^3.7.2",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "serverless-iam-roles-per-function": "^3.2.0"
+  }
+}
