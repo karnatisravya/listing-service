@@ -14,7 +14,7 @@ const getListing = async (event) => {
   try {
     const params = {
       TableName: process.env.DYNAMODB_TABLE_NAME,
-      Key: marshall({ listingId: event.pathParameters.listingId }),
+      Key: marshall({ id: event.pathParameters.id }),
     };
     const { Item } = await db.send(new GetItemCommand(params));
 
@@ -73,7 +73,7 @@ const updateListing = async (event) => {
     const objKeys = Object.keys(body);
     const params = {
       TableName: process.env.DYNAMODB_TABLE_NAME,
-      Key: marshall({ listingId: event.pathParameters.listingId }),
+      Key: marshall({ id: event.pathParameters.id }),
       UpdateExpression: `SET ${objKeys.map((_, index) => `#key${index} = :value${index}`).join(", ")}`,
       ExpressionAttributeNames: objKeys.reduce((acc, key, index) => ({
         ...acc,
@@ -109,7 +109,7 @@ const deleteListing = async (event) => {
   try {
     const params = {
       TableName: process.env.DYNAMODB_TABLE_NAME,
-      Key: marshall({ listingId: event.pathParameters.listingId }),
+      Key: marshall({ id: event.pathParameters.id }),
     };
     const deleteResult = await db.send(new DeleteItemCommand(params));
 
@@ -136,13 +136,13 @@ const getAllListings = async (event) => {
   try {
     const params = {
       TableName: process.env.DYNAMODB_TABLE_NAME,
-      FilterExpression: "category-id = :category-id",
+      FilterExpression: "categoryId = :categoryId",
       // Define the expression attribute value, which are substitutes for the values you want to compare.
       ExpressionAttributeValues: {
-        ":category-id": {N: event.pathParameters.categoryId},
+        ":categoryId": {N: event.pathParameters.categoryId},
       },
     };
-    const { Items } = await db.send(new ScanCommand({ TableName: process.env.DYNAMODB_TABLE_NAME }));
+    const { Items } = await db.send(new ScanCommand(params));
 
     response.body = JSON.stringify({
       message: "Successfully retrieved all listings for a category.",

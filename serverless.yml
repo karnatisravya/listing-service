@@ -11,7 +11,7 @@
 #
 # Happy Coding!
 
-service: listing-service
+service: listing-service-api
 
 frameworkVersion: '2'
 
@@ -25,7 +25,7 @@ provider:
     DYNAMODB_TABLE_NAME: ${self:custom.listingsTableName}
 
 custom:
-  listingsTableName: listings-table-${self:provider.stage}
+  listingsTableName: business-listings-table-${self:provider.stage}
 
 plugins:
   - serverless-iam-roles-per-function
@@ -38,7 +38,7 @@ functions:
     timeout: 5 # seconds
     events:
       - http:
-          path: listing/{listingId}
+          path: listing/{id}
           method: GET
     iamRoleStatements:
       - Effect: "Allow"
@@ -66,7 +66,7 @@ functions:
     timeout: 5 # seconds
     events:
       - http:
-          path: listing/{listingId}
+          path: listing/{id}
           method: PUT
     iamRoleStatements:
       - Effect: "Allow"
@@ -80,7 +80,7 @@ functions:
     timeout: 5 # seconds
     events:
       - http:
-          path: listing/{listingId}
+          path: listing/{id}
           method: DELETE
     iamRoleStatements:
       - Effect: "Allow"
@@ -109,10 +109,10 @@ resources:
       Properties:
         TableName: ${self:custom.listingsTableName}
         AttributeDefinitions:
-          - AttributeName: listingId
+          - AttributeName: id
             AttributeType: S
         KeySchema:
-          - AttributeName: listingId
+          - AttributeName: id
             KeyType: HASH
         ProvisionedThroughput:
           ReadCapacityUnits: 1
