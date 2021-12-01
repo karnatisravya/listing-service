@@ -209,7 +209,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/listing-service/dev/1638336266063-2021-12-01T05:24:26.063Z/listing-service.zip"
+          "S3Key": "serverless/listing-service/dev/1638340313810-2021-12-01T06:31:53.810Z/listing-service.zip"
         },
         "Handler": "api.getListing",
         "Runtime": "nodejs14.x",
@@ -240,7 +240,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/listing-service/dev/1638336266063-2021-12-01T05:24:26.063Z/listing-service.zip"
+          "S3Key": "serverless/listing-service/dev/1638340313810-2021-12-01T06:31:53.810Z/listing-service.zip"
         },
         "Handler": "api.createListing",
         "Runtime": "nodejs14.x",
@@ -271,7 +271,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/listing-service/dev/1638336266063-2021-12-01T05:24:26.063Z/listing-service.zip"
+          "S3Key": "serverless/listing-service/dev/1638340313810-2021-12-01T06:31:53.810Z/listing-service.zip"
         },
         "Handler": "api.updateListing",
         "Runtime": "nodejs14.x",
@@ -302,7 +302,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/listing-service/dev/1638336266063-2021-12-01T05:24:26.063Z/listing-service.zip"
+          "S3Key": "serverless/listing-service/dev/1638340313810-2021-12-01T06:31:53.810Z/listing-service.zip"
         },
         "Handler": "api.deleteListing",
         "Runtime": "nodejs14.x",
@@ -333,7 +333,7 @@
           "S3Bucket": {
             "Ref": "ServerlessDeploymentBucket"
           },
-          "S3Key": "serverless/listing-service/dev/1638336266063-2021-12-01T05:24:26.063Z/listing-service.zip"
+          "S3Key": "serverless/listing-service/dev/1638340313810-2021-12-01T06:31:53.810Z/listing-service.zip"
         },
         "Handler": "api.getAllListings",
         "Runtime": "nodejs14.x",
@@ -357,54 +357,54 @@
         "GetAllListingsLogGroup"
       ]
     },
-    "GetListingLambdaVersionCMpt75bj5t6yZHEFeh0AaLjnvdS5eC4cTRX1jAfzPw": {
+    "GetListingLambdaVersionIp7OhBEiCV0crIO0q2rgBPXtQLOsvb9muHEvfHqQE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetListingLambdaFunction"
         },
-        "CodeSha256": "MFqh6aHhEQSecn5eUj1OMDyx0n/8vBGUsE5k0cftQh8="
+        "CodeSha256": "SXCW6UeptyIcswUIwBn+rC9+tzMcLjQnc2LvM8ueq2A="
       }
     },
-    "CreateListingLambdaVersion2c0JRrrazISoeDQcCp3r6jcrHwWyXdUkMCtQpxMPo": {
+    "CreateListingLambdaVersioni3Of55JaqMdrMaFi03OFJUaY1gEud91oRbfNCAV9YU": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "CreateListingLambdaFunction"
         },
-        "CodeSha256": "MFqh6aHhEQSecn5eUj1OMDyx0n/8vBGUsE5k0cftQh8="
+        "CodeSha256": "SXCW6UeptyIcswUIwBn+rC9+tzMcLjQnc2LvM8ueq2A="
       }
     },
-    "UpdateListingLambdaVersionmXVOyc0vts4drUjYTB0xR06LB7cAvGdYIYfH2soZA": {
+    "UpdateListingLambdaVersionmO3vDYxdQWbUKtHCzCcMwtzUOTbktc84ehoOeOhAC7E": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "UpdateListingLambdaFunction"
         },
-        "CodeSha256": "MFqh6aHhEQSecn5eUj1OMDyx0n/8vBGUsE5k0cftQh8="
+        "CodeSha256": "SXCW6UeptyIcswUIwBn+rC9+tzMcLjQnc2LvM8ueq2A="
       }
     },
-    "DeleteListingLambdaVersionvGklFdK0chKkDGjrGlSIMSzX6L30C6OmGPSUfKTf2E": {
+    "DeleteListingLambdaVersionifG5GnnaY7BF8RuoE2VSXz1HIPU5SH9p065AiMKGE": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "DeleteListingLambdaFunction"
         },
-        "CodeSha256": "MFqh6aHhEQSecn5eUj1OMDyx0n/8vBGUsE5k0cftQh8="
+        "CodeSha256": "SXCW6UeptyIcswUIwBn+rC9+tzMcLjQnc2LvM8ueq2A="
       }
     },
-    "GetAllListingsLambdaVersionI2VJblCniMNZxbRCUxow3nyGBJYheqgciLuEr1lE4": {
+    "GetAllListingsLambdaVersiontvjGf0ascasyk1Xez3mNtKSgk49XCkS64RVC4MU2M": {
       "Type": "AWS::Lambda::Version",
       "DeletionPolicy": "Retain",
       "Properties": {
         "FunctionName": {
           "Ref": "GetAllListingsLambdaFunction"
         },
-        "CodeSha256": "MFqh6aHhEQSecn5eUj1OMDyx0n/8vBGUsE5k0cftQh8="
+        "CodeSha256": "SXCW6UeptyIcswUIwBn+rC9+tzMcLjQnc2LvM8ueq2A="
       }
     },
     "ApiGatewayRestApi": {
@@ -441,21 +441,6 @@
           "Ref": "ApiGatewayResourceListing"
         },
         "PathPart": "{listingId}",
-        "RestApiId": {
-          "Ref": "ApiGatewayRestApi"
-        }
-      }
-    },
-    "ApiGatewayResourcePost": {
-      "Type": "AWS::ApiGateway::Resource",
-      "Properties": {
-        "ParentId": {
-          "Fn::GetAtt": [
-            "ApiGatewayRestApi",
-            "RootResourceId"
-          ]
-        },
-        "PathPart": "post",
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
         }
@@ -534,13 +519,13 @@
         "GetListingLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayMethodPostPost": {
+    "ApiGatewayMethodListingPost": {
       "Type": "AWS::ApiGateway::Method",
       "Properties": {
         "HttpMethod": "POST",
         "RequestParameters": {},
         "ResourceId": {
-          "Ref": "ApiGatewayResourcePost"
+          "Ref": "ApiGatewayResourceListing"
         },
         "RestApiId": {
           "Ref": "ApiGatewayRestApi"
@@ -718,7 +703,7 @@
         "GetAllListingsLambdaPermissionApiGateway"
       ]
     },
-    "ApiGatewayDeployment1638336262719": {
+    "ApiGatewayDeployment1638340311182": {
       "Type": "AWS::ApiGateway::Deployment",
       "Properties": {
         "RestApiId": {
@@ -728,7 +713,7 @@
       },
       "DependsOn": [
         "ApiGatewayMethodListingListingidVarGet",
-        "ApiGatewayMethodPostPost",
+        "ApiGatewayMethodListingPost",
         "ApiGatewayMethodListingListingidVarPut",
         "ApiGatewayMethodListingListingidVarDelete",
         "ApiGatewayMethodListingsCategoryidVarGet"
@@ -1359,7 +1344,7 @@
     "GetListingLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetListingLambdaVersionCMpt75bj5t6yZHEFeh0AaLjnvdS5eC4cTRX1jAfzPw"
+        "Ref": "GetListingLambdaVersionIp7OhBEiCV0crIO0q2rgBPXtQLOsvb9muHEvfHqQE"
       },
       "Export": {
         "Name": "sls-listing-service-dev-GetListingLambdaFunctionQualifiedArn"
@@ -1368,7 +1353,7 @@
     "CreateListingLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "CreateListingLambdaVersion2c0JRrrazISoeDQcCp3r6jcrHwWyXdUkMCtQpxMPo"
+        "Ref": "CreateListingLambdaVersioni3Of55JaqMdrMaFi03OFJUaY1gEud91oRbfNCAV9YU"
       },
       "Export": {
         "Name": "sls-listing-service-dev-CreateListingLambdaFunctionQualifiedArn"
@@ -1377,7 +1362,7 @@
     "UpdateListingLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "UpdateListingLambdaVersionmXVOyc0vts4drUjYTB0xR06LB7cAvGdYIYfH2soZA"
+        "Ref": "UpdateListingLambdaVersionmO3vDYxdQWbUKtHCzCcMwtzUOTbktc84ehoOeOhAC7E"
       },
       "Export": {
         "Name": "sls-listing-service-dev-UpdateListingLambdaFunctionQualifiedArn"
@@ -1386,7 +1371,7 @@
     "DeleteListingLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "DeleteListingLambdaVersionvGklFdK0chKkDGjrGlSIMSzX6L30C6OmGPSUfKTf2E"
+        "Ref": "DeleteListingLambdaVersionifG5GnnaY7BF8RuoE2VSXz1HIPU5SH9p065AiMKGE"
       },
       "Export": {
         "Name": "sls-listing-service-dev-DeleteListingLambdaFunctionQualifiedArn"
@@ -1395,7 +1380,7 @@
     "GetAllListingsLambdaFunctionQualifiedArn": {
       "Description": "Current Lambda function version",
       "Value": {
-        "Ref": "GetAllListingsLambdaVersionI2VJblCniMNZxbRCUxow3nyGBJYheqgciLuEr1lE4"
+        "Ref": "GetAllListingsLambdaVersiontvjGf0ascasyk1Xez3mNtKSgk49XCkS64RVC4MU2M"
       },
       "Export": {
         "Name": "sls-listing-service-dev-GetAllListingsLambdaFunctionQualifiedArn"
